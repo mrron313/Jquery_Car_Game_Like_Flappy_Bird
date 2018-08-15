@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<title> Jquery Game </title>
+	
+	<style>
+	
+	.main{height:700px;overflow:hidden;position:absolute}
+	.container{background-image:url("bg.jpg");width:350px;height:700px;position:absolute;}
+	.bar{width: 350px;background-color:rgba(0, 0, 0, 0);height: 50px;position: relative; top: -120px;}
+	.car{background-image: url("Car.png");width:50px;height:70px;position:relative;top:630px; left: 150px}
+
+	
+	.bar1{background-color:darkslateblue ; width : 70px ;height:50px;float:left}
+	.bar2{background-color:darkslateblue ; width : 80px ;height:50px;float:right}
+	
+	.restart{background: #86f94d;text-align: center;padding: 18px;color: #000;font-size: 20px;position:relative;display:none;}
+	
+	.submit{background: #3a3738;padding: 10px;color: white;font-size: 14px;}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<div class="restart">
+		<p> Thanks for playing game . Your Score is : <span></span> </p>
+		<input type="submit" class="submit" value="Play Again"/>
+	</div>
+	
+	
+	<div class="YourScore" style="margin-bottom:20px">
+			Your Score : <span> </span>
+	</div>
+	
+		<div class="main">
+            <div class="container"></div>
+            <div class="bar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+            </div>
+		
+		</div>
+		<div class="car"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="game.js"></script>
+
+</body>
+
+</html>
